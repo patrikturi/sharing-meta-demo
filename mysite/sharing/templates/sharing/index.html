@@ -4,7 +4,7 @@
     {% for locale in supported_locales %}
         <meta property="og:locale:alternate" content={{locale}}>
     {% endfor %}
-    {% if current_locale == "hu_hu" %}
+    {% if current_locale == "hu_HU" %}
         <meta property="og:title" content="Ez a cim!">
         <meta property="og:description" content="Szia ez a leiras">
     {% else %}
@@ -17,7 +17,7 @@
     <meta property="fb:app_id" content="2107676952672061">
 </head>
 <body>
-    {% if current_locale == "hu_hu" %}
+    {% if current_locale == "hu_HU" %}
         Szia meta tag
     {% else %}
         Hello meta tag
