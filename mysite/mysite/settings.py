@@ -25,7 +25,7 @@ SECRET_KEY = 'yti(vqjc_!n4#p-^j!0#cepd6c%kb%&9l-femeafpl_vg!-sa('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
