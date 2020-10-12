@@ -1,1 +1,24 @@
-Hello sharing!
+<!DOCTYPE html>
+<head>
+    <meta property="og:locale" content="{{current_locale}}">
+    {% for locale in supported_locales %}
+        <meta property="og:locale:alternate" content={{locale}}>
+    {% endfor %}
+    {% if current_locale == "hu_hu" %}
+        <meta property="og:title" content="Ez a cim!">
+        <meta property="og:description" content="Szia ez a leiras">
+    {% else %}
+        <meta property="og:title" content="The title!">
+        <meta property="og:description" content="Hello this is the description">
+    {% endif %}
+    <meta property="og:image" content="https://static.djangoproject.com/img/logos/django-logo-positive.png">
+    <meta property="og:url" content="https://www.djangoproject.com">
+    <meta property="og:type" content="article">
+</head>
+<body>
+    {% if current_locale == "hu_hu" %}
+        Szia meta tag
+    {% else %}
+        Hello meta tag
+    {% endif %}
+</body>
